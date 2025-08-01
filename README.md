@@ -82,3 +82,38 @@ To develop a binary classification model that can:
 ```bash
 git clone https://github.com/your-username/fake-news-detection.git
 cd fake-news-detection
+
+
+
+output:
+
+🔍 FAKE NEWS DETECTION SYSTEM
+==================================================
+Creating sample dataset for demonstration...
+Dataset shape: (15, 2)
+Columns: ['content', 'label']
+Preprocessing text data...
+Final dataset shape: (15, 2)
+Label distribution:
+0    8
+1    7
+
+Training the model...
+
+==================================================
+MODEL EVALUATION RESULTS
+==================================================
+Accuracy:  1.0000
+Precision: 1.0000
+Recall:    1.0000
+F1-Score:  1.0000
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+        Real       1.00      1.00      1.00         2
+        Fake       1.00      1.00      1.00         1
+
+    accuracy                           1.00         3
+   macro avg       1.00      1.00      1.00         3
+weighted avg       1.00      1.00      1.00         3
