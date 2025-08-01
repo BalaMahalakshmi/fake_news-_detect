@@ -13,7 +13,7 @@ try:
         from nltk.corpus import stopwords
         from nltk.tokenize import word_tokenize
         nltk_available = True
-        # print("✅ NLTK loaded successfully")
+        # print(" NLTK loaded successfully")
     except LookupError:
         print("⚠️ NLTK data not found. Downloading...")
         nltk.download('punkt')
@@ -24,7 +24,7 @@ try:
         from nltk.tokenize import word_tokenize
         nltk_available = True
 except ImportError:
-    print("❌ NLTK not installed. Install with: pip install nltk")
+    print(" NLTK not installed. Install with: pip install nltk")
     nltk_available = False
 
 # Scikit-learn imports
@@ -34,9 +34,9 @@ try:
     from sklearn.linear_model import LogisticRegression
     from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
     sklearn_available = True
-    # print("✅ Scikit-learn loaded successfully")
+    # print("Scikit-learn loaded successfully")
 except ImportError:
-    print("❌ Scikit-learn not installed. Install with: pip install scikit-learn")
+    print(" Scikit-learn not installed. Install with: pip install scikit-learn")
     sklearn_available = False
 
 class FakeNewsDetector:
@@ -50,7 +50,7 @@ class FakeNewsDetector:
             try:
                 self.stop_words = set(stopwords.words('english'))
             except:
-                print("⚠️ Using basic stopwords list")
+                print("Using basic stopwords list")
                 self.stop_words = set(['the', 'is', 'at', 'which', 'on', 'and', 'a', 'to', 'are'])
         else:
             self.stop_words = set(['the', 'is', 'at', 'which', 'on', 'and', 'a', 'to', 'are'])

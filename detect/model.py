@@ -289,9 +289,9 @@ class FakeNewsDetector:
                 print(f"Fake Probability: {result['fake_probability']:.4f}")
                 
                 if result['prediction'] == 'FAKE':
-                    print("⚠️  This appears to be FAKE news!")
+                    print("This appears to be FAKE news!")
                 else:
-                    print("✅ This appears to be REAL news.")
+                    print("This appears to be REAL news.")
                     
             except Exception as e:
                 print(f"Error processing text: {e}")
@@ -342,7 +342,7 @@ def main():
     if choice in ['y', 'yes']:
         detector.create_simple_interface()
     
-    print("\n✅ Fake News Detection System Demo Complete!")
+    print("\nFake News Detection System Demo Complete!")
 
 if __name__ == "__main__":
     main()
